@@ -1,16 +1,30 @@
-# This is a sample Python script.
-
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
-
-
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
+import pygame
 
 
 # Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
 
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+def main():
+    DIM = 600
+    HEIGHT = DIM
+    WIDTH = DIM
+
+    SCREEN_WIDTH = WIDTH
+    SCREEN_HEIGHT = HEIGHT
+
+    screen = pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT))
+    pygame.display.set_caption('wave-function-colapse')
+
+    run = True
+
+    while run:
+        screen.fill((255, 255, 255))
+
+        for event in pygame.event.get():
+            if event.type == pygame.QUIT:
+                run = False
+
+    pygame.display.flip()
+
+
+if __name__ == '__main__':
+    main()
