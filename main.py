@@ -12,7 +12,7 @@ def main():
     SCREEN_HEIGHT = HEIGHT
 
     screen = pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT))
-    pygame.display.set_caption('wave-function-colapse')
+    pygame.display.set_caption('wave-function-collapse')
 
     run = True
 
