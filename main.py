@@ -1,9 +1,12 @@
 import pygame
+import yaml
 
-
-# Press the green button in the gutter to run the script.
 
 def main():
+    with open('source/tile_data/knots.yaml', 'r') as file:
+        tile_set_data = yaml.safe_load(file)
+
+
     DIM = 600
     HEIGHT = DIM
     WIDTH = DIM
