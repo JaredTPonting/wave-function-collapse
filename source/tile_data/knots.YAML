@@ -1,0 +1,25 @@
+corner:
+  0: "ABA"
+  1: "ABA"
+  2: "AAA"
+  3: "AAA"
+cross:
+  0: "ABA"
+  1: "ABA"
+  2: "ABA"
+  3: "ABA"
+empty:
+  0: "AAA"
+  1: "AAA"
+  2: "AAA"
+  3: "AAA"
+line:
+  0: "AAA"
+  1: "ABA"
+  2: "AAA"
+  3: "ABA"
+t:
+  0: "AAA"
+  1: "ABA"
+  2: "ABA"
+  3: "ABA"
