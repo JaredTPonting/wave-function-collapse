@@ -28,9 +28,14 @@ def main():
     screen.fill(BLACK)
 
     def draw_grid(n):
-        block_size = n
-        blocks_per_axis = n
-        block_width = SCREEN_WIDTH / blocks_per_axis
+        """
+        draws grid on screen
+        only works if SCREEN_WIDTH == SCREEN_HEIGHT = True
+
+        :param n:
+        :return:
+        """
+        block_width = SCREEN_WIDTH / n
 
         for x in range(n):
             for y in range(n):
@@ -38,7 +43,7 @@ def main():
                 pygame.draw.rect(screen, WHITE, rect, 1)
 
     while True:
-        draw_grid(2)
+        draw_grid(30)
 
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
